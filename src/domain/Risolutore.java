@@ -361,7 +361,7 @@ public class Risolutore {
         modelloGRB.optimize();
         modelloConVincoli.impostaVettoriXY(modelloGRB.getVars(), istanza.getNumeroGiorniSettimana(), istanza.getNumeroDipendenti(), istanza.getFrazionamentoGiornata().getNumeroIntervalli());
 
-        OutputDati.presentaRisultati(modelloConVincoli, istanza);
+        OutputDati.presentaRisultati(modelloConVincoli, istanza, modelloGRB);
         modelloGRB.write(istanza.getNome() + ".lp");
     }
 

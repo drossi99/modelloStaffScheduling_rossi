@@ -4,8 +4,12 @@ import domain.IstanzaProblema;
 import domain.Modello;
 import gurobi.GRB;
 import gurobi.GRBException;
+import gurobi.GRBModel;
 import gurobi.GRBVar;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class OutputDati {
@@ -19,29 +23,57 @@ public class OutputDati {
         System.err.flush();
     }
 
-    public static void presentaRisultati(Modello modelloConVincoli, IstanzaProblema istanza) throws GRBException {
+    public static void presentaRisultati(Modello modelloConVincoli, IstanzaProblema istanza, GRBModel modelloGRB) throws GRBException {
         if (modelloConVincoli.getModelloGRB().get(GRB.IntAttr.Status) == 3) {//il modello e' impossibile
             stampaMessaggio("Il modello inserito è impossibile");
         } else {
-            stampaModelloOttimizzatoFeasible(modelloConVincoli, istanza);
-            stampaModelloOttimizzatoFeasibleOrari2(modelloConVincoli, istanza);
+            stampaMessaggio(produciOutputModelloOttimizzatoFeasible(modelloConVincoli, istanza));
+            stampaMessaggio(produciOutputModelloOttimizzatoFeasibleOrari(modelloConVincoli, istanza, modelloGRB));
+            scriviFileOutput(modelloConVincoli, istanza, modelloGRB);
         }
     }
 
-    private static void stampaModelloOttimizzatoFeasibleOrari2(Modello modelloConVincoli, IstanzaProblema istanza) throws GRBException {
+    private static void scriviFileOutput(Modello modelloConVincoli, IstanzaProblema istanza, GRBModel modelloGRB) {
+        File fileIstanza = new File(istanza.getNome() + "_soluzione.txt");
+        try {
+            if (fileIstanza.createNewFile()) {
+                OutputDati.stampaMessaggio("Il file " + fileIstanza.getName() + " è stato creato correttamente");
+            } else {
+                OutputDati.stampaErrore("Il file " + fileIstanza.getName() + " esiste già: verrà sovrascritto");
+            }
+
+            FileWriter fileIstanzaWriter = new FileWriter(fileIstanza);
+            fileIstanzaWriter.write(produciOutputModelloOttimizzatoFeasibleOrari(modelloConVincoli, istanza, modelloGRB));
+            fileIstanzaWriter.close();
+
+            OutputDati.stampaMessaggio("Il file " + fileIstanza.getName() + " è stato scritto correttamente");
+        } catch (IOException e) {
+            OutputDati.stampaErrore("Non è stato possibile creare il file");
+            e.printStackTrace();
+        } catch (GRBException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static String produciOutputModelloOttimizzatoFeasibleOrari(Modello modelloConVincoli, IstanzaProblema istanza, GRBModel modelloGRB) throws GRBException {
         int numeroGiorniSettimana = istanza.getNumeroGiorniSettimana();
         int numeroIntervalli = istanza.getFrazionamentoGiornata().getNumeroIntervalli();
         int fattoreMoltiplicativo = istanza.getFrazionamentoGiornata().getFattoreMoltiplicativo();
         GRBVar[][][] vettoreX = modelloConVincoli.getVettoreX();
         GRBVar[][] vettoreY = modelloConVincoli.getVettoreY();
 
+        StringBuilder stringBuilderOutput = new StringBuilder();
         for (int d = 0; d < vettoreX[0].length; d++) {
-            StringBuilder strDipendente = new StringBuilder();
-            strDipendente.append("*****");
-            strDipendente.append(getOrariDipendente(vettoreX, vettoreY, d, numeroGiorniSettimana, numeroIntervalli, fattoreMoltiplicativo));
+                StringBuilder strDipendente = new StringBuilder();
+                strDipendente.append("*****");
+                strDipendente.append(getOrariDipendente(vettoreX, vettoreY, d, numeroGiorniSettimana, numeroIntervalli, fattoreMoltiplicativo));
 
-            stampaMessaggio(strDipendente.toString());
+                stringBuilderOutput.append(strDipendente);
         }
+
+        stringBuilderOutput.append("Il costo totale per il datore di lavoro è di € " + modelloGRB.get(GRB.DoubleAttr.ObjVal));
+
+        return stringBuilderOutput.toString();
     }
 
     private static String getOrariDipendente(GRBVar[][][] vettoreX, GRBVar[][] vettoreY, int d, int numeroGiorni, int numeroIntervalli, int fattoreMoltiplicativo) throws GRBException {
@@ -121,6 +153,8 @@ public class OutputDati {
             }
         }
 
+        strDipendente.append("\n");
+
         return strDipendente.toString();
     }
 
@@ -191,7 +225,7 @@ public class OutputDati {
         return oraString + ":" + minutiString;
     }
 
-    private static void stampaModelloOttimizzatoFeasible(Modello modelloConVincoli, IstanzaProblema istanza) throws GRBException {
+    private static String produciOutputModelloOttimizzatoFeasible(Modello modelloConVincoli, IstanzaProblema istanza) throws GRBException {
         int numeroGiorniSettimana = istanza.getNumeroGiorniSettimana();
         int numeroIntervalli = istanza.getFrazionamentoGiornata().getNumeroIntervalli();
         int fattoreMoltiplicativo = istanza.getFrazionamentoGiornata().getFattoreMoltiplicativo();
@@ -200,6 +234,8 @@ public class OutputDati {
 
         OutputDati.stampaMessaggio(modelloConVincoli.valoriVettoreXToString());
         OutputDati.stampaMessaggio(modelloConVincoli.valoriVettoreYToString());
+
+        StringBuilder stringBuilderOutput = new StringBuilder();
 
         for (int d = 0; d < vettoreX[0].length; d++) {
             StringBuilder strDipendente = new StringBuilder();
@@ -222,7 +258,9 @@ public class OutputDati {
 
             }
             strDipendente.append("\nIl dipendente " + d + " lavora " + (sommaIntervalliLavorativi / fattoreMoltiplicativo) + " ore");
-            stampaMessaggio(strDipendente.toString());
+            stringBuilderOutput.append(strDipendente.toString());
         }
+
+        return stringBuilderOutput.toString();
     }
 }
