@@ -43,7 +43,7 @@ public class GeneratoreDatiIstanze {
     static int[] assegnaCategoriaCasuale(int numeroDipendenti, int numeroCategorieDipendenti) {
         int[] mat_categoriaDipendenti = new int[numeroDipendenti];
         for (int d=0; d<numeroDipendenti; d++) {
-            mat_categoriaDipendenti[d] = EstrazioniCasuali.estraiIntero(0, numeroCategorieDipendenti);
+            mat_categoriaDipendenti[d] = EstrazioniCasuali.estraiIntero(1, numeroCategorieDipendenti);
         }
         return mat_categoriaDipendenti;
     }
