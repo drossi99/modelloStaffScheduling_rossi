@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="modelloTesi:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/modelloTesi_jar</output-path>
+    <root id="archive" name="modelloTesi.jar">
+      <element id="module-output" name="modelloTesi" />
+      <element id="extracted-dir" path="$GUROBI_HOME$/lib/gurobi.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
