@@ -5,9 +5,12 @@ import view.OutputDati;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Locale;
 
 public class IstanzaProblema {
     private String nome;
@@ -65,6 +68,11 @@ public class IstanzaProblema {
     }
 
     public String toText() {
+        DecimalFormatSymbols formatSymbols = new DecimalFormatSymbols(Locale.getDefault());
+        formatSymbols.setDecimalSeparator('.');
+        DecimalFormat df = new DecimalFormat("########.00", formatSymbols);
+
+
         StringBuilder text = new StringBuilder("******\nL'istanza presente è composta come segue:\n");
         text.append("\n\tnome: ").append(this.nome);
         text.append("\n\tnumero di dipendenti: ").append(this.numeroDipendenti);
@@ -72,11 +80,11 @@ public class IstanzaProblema {
         text.append("\n\tnumero di categorie dipendenti: ").append(this.numeroCategorieDipendenti);
         text.append("\n\tvettore paghe orarie di ogni categoria:");
         for (int i = 0; i < this.numeroCategorieDipendenti; i++) {
-            text.append("\n\t\tcategoria: ").append(i).append(" -> ").append(this.array_pagheOrarieNormalizzato[i]);
+            text.append("\n\t\tcategoria: ").append(i).append(" -> ").append(df.format(this.array_pagheOrarieNormalizzato[i]));
         }
         text.append("\n\tvettore paghe per intervallo di ogni categoria:");
         for (int i = 0; i < this.numeroCategorieDipendenti; i++) {
-            text.append("\n\t\tcategoria: ").append(i).append(" -> ").append(this.array_pagheOrariePerIntervallo[i]);
+            text.append("\n\t\tcategoria: ").append(i).append(" -> ").append(df.format(this.array_pagheOrariePerIntervallo[i]));
         }
         text.append("\n\tvettore che indica se un dipendente sia part (0) o full (1) time:");
         for (int i = 0; i < this.numeroDipendenti; i++) {
@@ -134,15 +142,19 @@ public class IstanzaProblema {
     }
 
     private String toTextAttributiPerLinea() {
+        DecimalFormatSymbols formatSymbols = new DecimalFormatSymbols(Locale.getDefault());
+        formatSymbols.setDecimalSeparator('.');
+        DecimalFormat df = new DecimalFormat("########.00", formatSymbols);
+
         StringBuilder text = new StringBuilder();
         text.append(this.nome).append("\n");
         text.append(this.numeroDipendenti).append("\n");
         text.append(this.frazionamentoGiornata.getNumeroIntervalli()).append("\n");
         text.append(this.numeroCategorieDipendenti).append("\n");
         for (int i = 0; i < this.numeroCategorieDipendenti-1; i++) {
-            text.append(this.array_pagheOrarieNormalizzato[i]).append(",");
+            text.append(df.format(this.array_pagheOrarieNormalizzato[i])).append(",");
         }
-        text.append(this.array_pagheOrarieNormalizzato[this.numeroCategorieDipendenti - 1]).append("\n"); //in modo da avere paga1,paga2,paga3\n
+        text.append(df.format(this.array_pagheOrarieNormalizzato[this.numeroCategorieDipendenti - 1])).append("\n"); //in modo da avere paga1,paga2,paga3\n
 
         for (int i = 0; i < this.numeroDipendenti-1; i++) {
             text.append(this.array_isFullTime[i]).append(",");

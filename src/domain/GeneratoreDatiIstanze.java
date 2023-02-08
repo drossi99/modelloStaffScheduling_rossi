@@ -13,14 +13,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GeneratoreDatiIstanze {
-    public static final int MIN_NUMERO_DIPENDENTI = 2;
-    public static final int MAX_NUMERO_DIPENDENTI = 200;
+    public static final int MIN_NUMERO_DIPENDENTI = 1;
+    public static final int MAX_NUMERO_DIPENDENTI = 250;
     private static final String TITOLO_SCELTA_INTERVALLI = "Inserisci il numero corrispondente al frazionamento desiderato:";
     private static final String[] VOCI_SCELTA_INTERVALLI = {"ogni 15 minuti -> 96 intervalli", "ogni mezz'ora -> 48 intervalli", "ogni ora -> 24 intervalli"};
     static final int PERCENTUALE_PARTTIME = 50;
     static final int MIN_NUMERO_CATEGORIE = 1;
-    static final int MAX_NUMERO_CATEGORIE = 5;
-    static final double MIN_PAGA_ORARIA = 8.00;
+    static final int MAX_NUMERO_CATEGORIE = 15;
+    static final double MIN_PAGA_ORARIA = 20.00;
     static final double MAX_PAGA_ORARIA = 500.00;
     static final int NUMERO_GIORNI_SETTIMANA = 7;
     static final int NUMERO_ORE_GIORNATA = 24;
@@ -29,11 +29,8 @@ public class GeneratoreDatiIstanze {
     static final int NUMERO_GIORNILAVORATIVI_MAX = 5;
     static final int ORE_CONTINUE = 4;
     static final int DURATA_MAX_TURNO = 12;
-    static final LocalTime ORA_INIZIO_PAUSAPRANZO = LocalTime.parse("11:00");
-    static final LocalTime ORA_FINE_PAUSAPRANZO = LocalTime.parse("14:00");
-    static final LocalTime DURATA_PAUSAPRANZO = LocalTime.parse("01:00");
     static final LocalTime ORA_INIZIO_ATTIVITA = LocalTime.parse("05:00");
-    static final LocalTime ORA_FINE_ATTIVITA = LocalTime.parse("21:00");
+    static final LocalTime ORA_FINE_ATTIVITA = LocalTime.parse("22:00");
 
     static int[] assegnaCategoriaManuale(int numeroDipendenti, int numeroCategorieDipendenti) {
         int[] mat_categoriaDipendenti = new int[numeroDipendenti];
@@ -46,7 +43,7 @@ public class GeneratoreDatiIstanze {
     static int[] assegnaCategoriaCasuale(int numeroDipendenti, int numeroCategorieDipendenti) {
         int[] mat_categoriaDipendenti = new int[numeroDipendenti];
         for (int d=0; d<numeroDipendenti; d++) {
-            mat_categoriaDipendenti[d] = EstrazioniCasuali.estraiIntero(MIN_NUMERO_CATEGORIE, numeroCategorieDipendenti);
+            mat_categoriaDipendenti[d] = EstrazioniCasuali.estraiIntero(0, numeroCategorieDipendenti);
         }
         return mat_categoriaDipendenti;
     }
@@ -221,52 +218,6 @@ public class GeneratoreDatiIstanze {
         parametriTipici[7] = DURATA_MAX_TURNO;
 
         return parametriTipici;
-    }
-
-    public static LocalTime[] assegnaPausaPranzo() {
-        int numeroOrari = 3;
-        LocalTime[] pausaPranzo;
-        OutputDati.stampaMessaggio("Valori di default:\n" +
-                "ora di inizio della pausa pranzo:\t" + ORA_INIZIO_PAUSAPRANZO.format(DateTimeFormatter.ofPattern("HH:mm")) + "\n" +
-                "ora di fine della pausa pranzo:\t" + ORA_FINE_PAUSAPRANZO.format(DateTimeFormatter.ofPattern("HH:mm")) + "\n" +
-                "durata della pausa pranzo:\t" + DURATA_PAUSAPRANZO.format(DateTimeFormatter.ofPattern("HH:mm")));
-        boolean isManuale = InputDati.yesOrNo("Vuoi impostare dei valori diversi da quelli di default per i parametri sopra?");
-        if (isManuale) {
-            pausaPranzo = assegnaPausaPranzoManuale(numeroOrari);
-        } else {
-            pausaPranzo = assegnaPausaPranzoDefault(numeroOrari);
-        }
-
-        return pausaPranzo;
-    }
-
-    private static LocalTime[] assegnaPausaPranzoManuale(int numeroOrari) {
-        LocalTime[] pausaPranzo = new LocalTime[numeroOrari];
-        OutputDati.stampaMessaggio("Valori nuovi (usare il formato HH:mm e un orario consono al frazionamento di giornata scelto):");
-
-        do {
-            try {
-                String string_oraInizio = InputDati.leggiStringaNonVuota("ora di inizio della pausa pranzo: ");
-                String string_oraFine = InputDati.leggiStringaNonVuota("ora di fine della pausa pranzo: ");
-                String string_durata = InputDati.leggiStringaNonVuota("durata della pausa pranzo: ");
-
-                pausaPranzo[0] = LocalTime.parse(string_oraInizio);
-                pausaPranzo[1] = LocalTime.parse(string_oraFine);
-                pausaPranzo[2] = LocalTime.parse(string_durata);
-            } catch (Exception e) {
-                OutputDati.stampaErrore("Il formato inserito non è accettato");
-            }
-        } while (pausaPranzo[0] == null || pausaPranzo[1] == null || pausaPranzo[2] == null);
-        return pausaPranzo;
-    }
-
-    public static LocalTime[] assegnaPausaPranzoDefault(int numeroOrari) {
-        LocalTime[] pausaPranzo = new LocalTime[numeroOrari];
-        pausaPranzo[0] = ORA_INIZIO_PAUSAPRANZO;
-        pausaPranzo[1] = ORA_FINE_PAUSAPRANZO;
-        pausaPranzo[2] = DURATA_PAUSAPRANZO;
-
-        return pausaPranzo;
     }
 
     public static LocalTime[] assegnaOrarioAttivita() {

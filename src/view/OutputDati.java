@@ -145,10 +145,10 @@ public class OutputDati {
             strDipendente.append(":");
             strDipendente.append(minutiInizio == 0 ? "00" : minutiInizio);
             strDipendente.append(" alle ");
-            strDipendente.append(oraFine);
+            strDipendente.append(oraFine == 24 ? "00" : oraFine);
             strDipendente.append(":");
             strDipendente.append(minutiFine == 0 ? "00" : minutiFine);
-            if (listaGiorniInizio.get(j) != listaGiorniFine.get(j)) {
+            if (listaGiorniInizio.get(j) != listaGiorniFine.get(j) || oraFine == 24) {
                 strDipendente.append(" del giorno seguente");
             }
         }
