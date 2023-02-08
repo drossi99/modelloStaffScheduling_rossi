@@ -106,7 +106,7 @@ public class OutputDati {
         for (int j = 0; j < listaIntervalliInizio.size(); j++) {
             int oraInizio = (listaIntervalliInizio.get(j) % numeroIntervalli) / fattoreMoltiplicativo;
             int minutiInizio = ((listaIntervalliInizio.get(j) % numeroIntervalli) % fattoreMoltiplicativo) * 60 / fattoreMoltiplicativo ;
-            int oraFine = ((listaIntervalliFine.get(j) % numeroIntervalli )/ fattoreMoltiplicativo);
+            int oraFine = ((listaIntervalliFine.get(j) % numeroIntervalli )/ fattoreMoltiplicativo) + 1;//+1 serve perché l'intervallo 5 inizia sì alle 5, ma termina alle 6
             int minutiFine = ((listaIntervalliFine.get(j) % numeroIntervalli) % fattoreMoltiplicativo) * 60 / fattoreMoltiplicativo;
             strDipendente.append("\n\til giorno " + (listaGiorniInizio.get(j)) + ": dalle ");
             strDipendente.append(oraInizio);
