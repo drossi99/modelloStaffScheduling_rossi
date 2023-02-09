@@ -37485,6 +37485,358 @@ Subject To
    + x6_9_5 + x6_9_6 + x6_9_7 + x6_9_8 + x6_9_9 + x6_9_10 + x6_9_11
    + x6_9_12 + x6_9_13 + x6_9_14 + x6_9_15 + x6_9_16 + x6_9_17 + x6_9_18
    + x6_9_19 + x6_9_20 + x6_9_21 + x6_9_22 + x6_9_23 >= 40
+ vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18: x5_0_13 + x5_1_13
+   + x5_2_13 + x5_3_13 + x5_4_13 + x5_5_13 + x5_6_13 + x5_7_13 + x5_8_13
+   + x5_9_13 >= 5
+ vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18: x5_0_14 + x5_1_14
+   + x5_2_14 + x5_3_14 + x5_4_14 + x5_5_14 + x5_6_14 + x5_7_14 + x5_8_14
+   + x5_9_14 >= 5
+ vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18: x5_0_15 + x5_1_15
+   + x5_2_15 + x5_3_15 + x5_4_15 + x5_5_15 + x5_6_15 + x5_7_15 + x5_8_15
+   + x5_9_15 >= 5
+ vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18: x5_0_16 + x5_1_16
+   + x5_2_16 + x5_3_16 + x5_4_16 + x5_5_16 + x5_6_16 + x5_7_16 + x5_8_16
+   + x5_9_16 >= 5
+ vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18: x5_0_17 + x5_1_17
+   + x5_2_17 + x5_3_17 + x5_4_17 + x5_5_17 + x5_6_17 + x5_7_17 + x5_8_17
+   + x5_9_17 >= 5
+ vincoloPermessoGiornaliero5_dip0: y5_0 = 0
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int0: x0_1_0 + x0_2_0
+   <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int1: x0_1_1 + x0_2_1
+   <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int2: x0_1_2 + x0_2_2
+   <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int3: x0_1_3 + x0_2_3
+   <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int4: x0_1_4 + x0_2_4
+   <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int5: x0_1_5 + x0_2_5
+   <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int6: x0_1_6 + x0_2_6
+   <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int7: x0_1_7 + x0_2_7
+   <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int8: x0_1_8 + x0_2_8
+   <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int9: x0_1_9 + x0_2_9
+   <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int10: x0_1_10
+   + x0_2_10 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int11: x0_1_11
+   + x0_2_11 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int12: x0_1_12
+   + x0_2_12 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int13: x0_1_13
+   + x0_2_13 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int14: x0_1_14
+   + x0_2_14 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int15: x0_1_15
+   + x0_2_15 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int16: x0_1_16
+   + x0_2_16 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int17: x0_1_17
+   + x0_2_17 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int18: x0_1_18
+   + x0_2_18 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int19: x0_1_19
+   + x0_2_19 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int20: x0_1_20
+   + x0_2_20 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int21: x0_1_21
+   + x0_2_21 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int22: x0_1_22
+   + x0_2_22 <= 1
+ vincoliDipendentiIncompatibili_giorno0_dip11_dip22_int23: x0_1_23
+   + x0_2_23 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int0: x1_1_0 + x1_2_0
+   <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int1: x1_1_1 + x1_2_1
+   <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int2: x1_1_2 + x1_2_2
+   <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int3: x1_1_3 + x1_2_3
+   <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int4: x1_1_4 + x1_2_4
+   <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int5: x1_1_5 + x1_2_5
+   <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int6: x1_1_6 + x1_2_6
+   <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int7: x1_1_7 + x1_2_7
+   <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int8: x1_1_8 + x1_2_8
+   <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int9: x1_1_9 + x1_2_9
+   <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int10: x1_1_10
+   + x1_2_10 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int11: x1_1_11
+   + x1_2_11 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int12: x1_1_12
+   + x1_2_12 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int13: x1_1_13
+   + x1_2_13 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int14: x1_1_14
+   + x1_2_14 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int15: x1_1_15
+   + x1_2_15 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int16: x1_1_16
+   + x1_2_16 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int17: x1_1_17
+   + x1_2_17 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int18: x1_1_18
+   + x1_2_18 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int19: x1_1_19
+   + x1_2_19 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int20: x1_1_20
+   + x1_2_20 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int21: x1_1_21
+   + x1_2_21 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int22: x1_1_22
+   + x1_2_22 <= 1
+ vincoliDipendentiIncompatibili_giorno1_dip11_dip22_int23: x1_1_23
+   + x1_2_23 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int0: x2_1_0 + x2_2_0
+   <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int1: x2_1_1 + x2_2_1
+   <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int2: x2_1_2 + x2_2_2
+   <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int3: x2_1_3 + x2_2_3
+   <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int4: x2_1_4 + x2_2_4
+   <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int5: x2_1_5 + x2_2_5
+   <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int6: x2_1_6 + x2_2_6
+   <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int7: x2_1_7 + x2_2_7
+   <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int8: x2_1_8 + x2_2_8
+   <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int9: x2_1_9 + x2_2_9
+   <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int10: x2_1_10
+   + x2_2_10 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int11: x2_1_11
+   + x2_2_11 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int12: x2_1_12
+   + x2_2_12 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int13: x2_1_13
+   + x2_2_13 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int14: x2_1_14
+   + x2_2_14 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int15: x2_1_15
+   + x2_2_15 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int16: x2_1_16
+   + x2_2_16 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int17: x2_1_17
+   + x2_2_17 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int18: x2_1_18
+   + x2_2_18 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int19: x2_1_19
+   + x2_2_19 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int20: x2_1_20
+   + x2_2_20 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int21: x2_1_21
+   + x2_2_21 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int22: x2_1_22
+   + x2_2_22 <= 1
+ vincoliDipendentiIncompatibili_giorno2_dip11_dip22_int23: x2_1_23
+   + x2_2_23 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int0: x3_1_0 + x3_2_0
+   <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int1: x3_1_1 + x3_2_1
+   <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int2: x3_1_2 + x3_2_2
+   <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int3: x3_1_3 + x3_2_3
+   <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int4: x3_1_4 + x3_2_4
+   <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int5: x3_1_5 + x3_2_5
+   <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int6: x3_1_6 + x3_2_6
+   <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int7: x3_1_7 + x3_2_7
+   <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int8: x3_1_8 + x3_2_8
+   <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int9: x3_1_9 + x3_2_9
+   <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int10: x3_1_10
+   + x3_2_10 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int11: x3_1_11
+   + x3_2_11 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int12: x3_1_12
+   + x3_2_12 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int13: x3_1_13
+   + x3_2_13 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int14: x3_1_14
+   + x3_2_14 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int15: x3_1_15
+   + x3_2_15 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int16: x3_1_16
+   + x3_2_16 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int17: x3_1_17
+   + x3_2_17 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int18: x3_1_18
+   + x3_2_18 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int19: x3_1_19
+   + x3_2_19 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int20: x3_1_20
+   + x3_2_20 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int21: x3_1_21
+   + x3_2_21 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int22: x3_1_22
+   + x3_2_22 <= 1
+ vincoliDipendentiIncompatibili_giorno3_dip11_dip22_int23: x3_1_23
+   + x3_2_23 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int0: x4_1_0 + x4_2_0
+   <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int1: x4_1_1 + x4_2_1
+   <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int2: x4_1_2 + x4_2_2
+   <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int3: x4_1_3 + x4_2_3
+   <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int4: x4_1_4 + x4_2_4
+   <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int5: x4_1_5 + x4_2_5
+   <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int6: x4_1_6 + x4_2_6
+   <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int7: x4_1_7 + x4_2_7
+   <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int8: x4_1_8 + x4_2_8
+   <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int9: x4_1_9 + x4_2_9
+   <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int10: x4_1_10
+   + x4_2_10 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int11: x4_1_11
+   + x4_2_11 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int12: x4_1_12
+   + x4_2_12 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int13: x4_1_13
+   + x4_2_13 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int14: x4_1_14
+   + x4_2_14 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int15: x4_1_15
+   + x4_2_15 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int16: x4_1_16
+   + x4_2_16 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int17: x4_1_17
+   + x4_2_17 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int18: x4_1_18
+   + x4_2_18 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int19: x4_1_19
+   + x4_2_19 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int20: x4_1_20
+   + x4_2_20 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int21: x4_1_21
+   + x4_2_21 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int22: x4_1_22
+   + x4_2_22 <= 1
+ vincoliDipendentiIncompatibili_giorno4_dip11_dip22_int23: x4_1_23
+   + x4_2_23 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int0: x5_1_0 + x5_2_0
+   <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int1: x5_1_1 + x5_2_1
+   <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int2: x5_1_2 + x5_2_2
+   <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int3: x5_1_3 + x5_2_3
+   <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int4: x5_1_4 + x5_2_4
+   <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int5: x5_1_5 + x5_2_5
+   <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int6: x5_1_6 + x5_2_6
+   <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int7: x5_1_7 + x5_2_7
+   <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int8: x5_1_8 + x5_2_8
+   <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int9: x5_1_9 + x5_2_9
+   <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int10: x5_1_10
+   + x5_2_10 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int11: x5_1_11
+   + x5_2_11 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int12: x5_1_12
+   + x5_2_12 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int13: x5_1_13
+   + x5_2_13 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int14: x5_1_14
+   + x5_2_14 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int15: x5_1_15
+   + x5_2_15 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int16: x5_1_16
+   + x5_2_16 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int17: x5_1_17
+   + x5_2_17 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int18: x5_1_18
+   + x5_2_18 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int19: x5_1_19
+   + x5_2_19 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int20: x5_1_20
+   + x5_2_20 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int21: x5_1_21
+   + x5_2_21 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int22: x5_1_22
+   + x5_2_22 <= 1
+ vincoliDipendentiIncompatibili_giorno5_dip11_dip22_int23: x5_1_23
+   + x5_2_23 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int0: x6_1_0 + x6_2_0
+   <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int1: x6_1_1 + x6_2_1
+   <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int2: x6_1_2 + x6_2_2
+   <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int3: x6_1_3 + x6_2_3
+   <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int4: x6_1_4 + x6_2_4
+   <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int5: x6_1_5 + x6_2_5
+   <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int6: x6_1_6 + x6_2_6
+   <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int7: x6_1_7 + x6_2_7
+   <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int8: x6_1_8 + x6_2_8
+   <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int9: x6_1_9 + x6_2_9
+   <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int10: x6_1_10
+   + x6_2_10 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int11: x6_1_11
+   + x6_2_11 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int12: x6_1_12
+   + x6_2_12 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int13: x6_1_13
+   + x6_2_13 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int14: x6_1_14
+   + x6_2_14 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int15: x6_1_15
+   + x6_2_15 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int16: x6_1_16
+   + x6_2_16 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int17: x6_1_17
+   + x6_2_17 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int18: x6_1_18
+   + x6_2_18 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int19: x6_1_19
+   + x6_2_19 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int20: x6_1_20
+   + x6_2_20 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int21: x6_1_21
+   + x6_2_21 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int22: x6_1_22
+   + x6_2_22 <= 1
+ vincoliDipendentiIncompatibili_giorno6_dip11_dip22_int23: x6_1_23
+   + x6_2_23 <= 1
 Bounds
 Binaries
  x0_0_0 x0_0_1 x0_0_2 x0_0_3 x0_0_4 x0_0_5 x0_0_6 x0_0_7 x0_0_8 x0_0_9
