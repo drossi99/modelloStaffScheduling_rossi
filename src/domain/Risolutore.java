@@ -387,7 +387,7 @@ public class Risolutore {
                     GRBLinExpr sommatoriaPersonaleMinimo = new GRBLinExpr();
                     int giornoDaVincolare = quantitaMinimaCorrente.getGiorni()[k];
                     for (int d = 0; d < istanza.getNumeroDipendenti(); d++) {
-                        if (istanza.getArray_categoriaDipendente()[d] == (quantitaMinimaCorrente.getCategoria()+1)) {
+                        if (istanza.getArray_categoriaDipendente()[d] == (quantitaMinimaCorrente.getCategoria())) {
                             sommatoriaPersonaleMinimo.addTerm(1, modelloDaIstanza.getVettoreX()[giornoDaVincolare][d][t]);
                         }
                     }

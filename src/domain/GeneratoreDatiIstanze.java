@@ -43,7 +43,7 @@ public class GeneratoreDatiIstanze {
     static int[] assegnaCategoriaCasuale(int numeroDipendenti, int numeroCategorieDipendenti) {
         int[] mat_categoriaDipendenti = new int[numeroDipendenti];
         for (int d=0; d<numeroDipendenti; d++) {
-            mat_categoriaDipendenti[d] = EstrazioniCasuali.estraiIntero(0, numeroCategorieDipendenti);
+            mat_categoriaDipendenti[d] = EstrazioniCasuali.estraiIntero(1, numeroCategorieDipendenti);
         }
         return mat_categoriaDipendenti;
     }
@@ -268,7 +268,7 @@ public class GeneratoreDatiIstanze {
     }
 
     public static QuantitaMinima inserisciNuovaQuantitaMinima(int numeroCategorie, int numeroGiorni) {
-        int numeroCategoria = InputDati.leggiIntero("Inserisci la categoria per cui vuoi impostare una quantità minima di personale: (i numeri vanno da 0 a " + (numeroCategorie-1) + "): ", 0, numeroCategorie - 1);
+        int numeroCategoria = InputDati.leggiIntero("Inserisci la categoria per cui vuoi impostare una quantità minima di personale: (i numeri vanno da 1 a " + (numeroCategorie) + "): ", 1, numeroCategorie);
         LocalTime[] orarioQuantitaMinima = new LocalTime[2];
         OutputDati.stampaMessaggio("Usa il formato HH:mm e un orario consono al frazionamento di giornata scelto):");
 

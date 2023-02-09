@@ -37485,21 +37485,6 @@ Subject To
    + x6_9_5 + x6_9_6 + x6_9_7 + x6_9_8 + x6_9_9 + x6_9_10 + x6_9_11
    + x6_9_12 + x6_9_13 + x6_9_14 + x6_9_15 + x6_9_16 + x6_9_17 + x6_9_18
    + x6_9_19 + x6_9_20 + x6_9_21 + x6_9_22 + x6_9_23 >= 40
- vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18: x5_0_13 + x5_1_13
-   + x5_2_13 + x5_3_13 + x5_4_13 + x5_5_13 + x5_6_13 + x5_7_13 + x5_8_13
-   + x5_9_13 >= 5
- vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18: x5_0_14 + x5_1_14
-   + x5_2_14 + x5_3_14 + x5_4_14 + x5_5_14 + x5_6_14 + x5_7_14 + x5_8_14
-   + x5_9_14 >= 5
- vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18: x5_0_15 + x5_1_15
-   + x5_2_15 + x5_3_15 + x5_4_15 + x5_5_15 + x5_6_15 + x5_7_15 + x5_8_15
-   + x5_9_15 >= 5
- vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18: x5_0_16 + x5_1_16
-   + x5_2_16 + x5_3_16 + x5_4_16 + x5_5_16 + x5_6_16 + x5_7_16 + x5_8_16
-   + x5_9_16 >= 5
- vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18: x5_0_17 + x5_1_17
-   + x5_2_17 + x5_3_17 + x5_4_17 + x5_5_17 + x5_6_17 + x5_7_17 + x5_8_17
-   + x5_9_17 >= 5
 Bounds
 Binaries
  x0_0_0 x0_0_1 x0_0_2 x0_0_3 x0_0_4 x0_0_5 x0_0_6 x0_0_7 x0_0_8 x0_0_9
