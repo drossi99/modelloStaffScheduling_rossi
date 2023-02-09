@@ -78,4 +78,6 @@ Il dipendente 9 avrà questi orari:
 	il giorno 3: dalle 8:00 alle 19:00
 	il giorno 4: dalle 6:00 alle 18:00
 	il giorno 6: dalle 5:00 alle 11:00
-Il costo totale per il datore di lavoro è di € 8200.0Il modello ha 1750 variabiliIl modello ha 18147 vincoli
+Il costo totale per il datore di lavoro è di € 8200.0
+Il modello ha 1750 variabili
+Il modello ha 18147 vincoli

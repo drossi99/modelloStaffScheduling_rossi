@@ -290,41 +290,41 @@ public class Risolutore {
                 for (int t = 0; t < numeroIntervalli; t++) {
                     if (t - intervalliPausaMinima < 0) {
                         if (g > 0) {
-                            for (int k = 2; k < intervalliPausaMinima + 1; k++) {
-                                if (t - k < 0) {
+                            for (int p = 2; p < intervalliPausaMinima + 1; p++) {
+                                if (t - p < 0) {
                                     GRBLinExpr sommatoriaTurno = new GRBLinExpr();
                                     sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g][d][t]);
-                                    sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g - 1][d][numeroIntervalli - k]);
-                                    sommatoriaTurno.addTerm(-1, modelloDaIstanza.getVettoreX()[g - 1][d][numeroIntervalli - k + 1]);
-                                    GRBConstr vincoloPausaMinimaTraTurni = modelloGRB.addConstr(sommatoriaTurno, GRB.LESS_EQUAL, 1, "vincoloPausaMinimaTraTurni_giorno" + g + "_dip" + d + "_int" + t) ;
+                                    sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g - 1][d][numeroIntervalli - p]);
+                                    sommatoriaTurno.addTerm(-1, modelloDaIstanza.getVettoreX()[g - 1][d][numeroIntervalli - p + 1]);
+                                    GRBConstr vincoloPausaMinimaTraTurni = modelloGRB.addConstr(sommatoriaTurno, GRB.LESS_EQUAL, 1, "vincoloPausaMinimaTraTurni_giorno" + g + "_dip" + d + "_int" + t + "_p" + p) ;
 
                                 } else {
                                     GRBLinExpr sommatoriaTurno = new GRBLinExpr();
                                     sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g][d][t]);
-                                    sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g][d][t - k]);
-                                    sommatoriaTurno.addTerm(-1, modelloDaIstanza.getVettoreX()[g][d][t - k + 1]);
-                                    GRBConstr vincoloPausaMinimaTraTurni = modelloGRB.addConstr(sommatoriaTurno, GRB.LESS_EQUAL, 1, "vincoloPausaMinimaTraTurni_giorno" + g + "_dip" + d + "_int" + t) ;
+                                    sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g][d][t - p]);
+                                    sommatoriaTurno.addTerm(-1, modelloDaIstanza.getVettoreX()[g][d][t - p + 1]);
+                                    GRBConstr vincoloPausaMinimaTraTurni = modelloGRB.addConstr(sommatoriaTurno, GRB.LESS_EQUAL, 1, "vincoloPausaMinimaTraTurni_giorno" + g + "_dip" + d + "_int" + t + "_p" + p) ;
 
                                 }
                             }
                         } else {
-                            for (int k = 2; k < intervalliPausaMinima + 1; k++) {
-                                if (t - k >= 0) {
+                            for (int p = 2; p < intervalliPausaMinima + 1; p++) {
+                                if (t - p >= 0) {
                                     GRBLinExpr sommatoriaTurno = new GRBLinExpr();
                                     sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g][d][t]);
-                                    sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g][d][t - k]);
-                                    sommatoriaTurno.addTerm(-1, modelloDaIstanza.getVettoreX()[g][d][t - k + 1]);
-                                    GRBConstr vincoloPausaMinimaTraTurni = modelloGRB.addConstr(sommatoriaTurno, GRB.LESS_EQUAL, 1, "vincoloPausaMinimaTraTurni_giorno" + g + "_dip" + d + "_int" + t) ;
+                                    sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g][d][t - p]);
+                                    sommatoriaTurno.addTerm(-1, modelloDaIstanza.getVettoreX()[g][d][t - p + 1]);
+                                    GRBConstr vincoloPausaMinimaTraTurni = modelloGRB.addConstr(sommatoriaTurno, GRB.LESS_EQUAL, 1, "vincoloPausaMinimaTraTurni_giorno" + g + "_dip" + d + "_int" + t + "_p" + p) ;
                                 }
                             }
                         }
                     } else {
-                        for (int k = 2; k < intervalliPausaMinima + 1; k++) {
+                        for (int p = 2; p < intervalliPausaMinima + 1; p++) {
                             GRBLinExpr sommatoriaTurno = new GRBLinExpr();
                             sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g][d][t]);
-                            sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g][d][t - k]);
-                            sommatoriaTurno.addTerm(-1, modelloDaIstanza.getVettoreX()[g][d][t - k + 1]);
-                            GRBConstr vincoloPausaMinimaTraTurni = modelloGRB.addConstr(sommatoriaTurno, GRB.LESS_EQUAL, 1, "vincoloPausaMinimaTraTurni_giorno" + g + "_dip" + d + "_int" + t) ;
+                            sommatoriaTurno.addTerm(1, modelloDaIstanza.getVettoreX()[g][d][t - p]);
+                            sommatoriaTurno.addTerm(-1, modelloDaIstanza.getVettoreX()[g][d][t - p + 1]);
+                            GRBConstr vincoloPausaMinimaTraTurni = modelloGRB.addConstr(sommatoriaTurno, GRB.LESS_EQUAL, 1, "vincoloPausaMinimaTraTurni_giorno" + g + "_dip" + d + "_int" + t + "_p" + p) ;
                         }
                     }
                 }
