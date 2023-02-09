@@ -72,6 +72,8 @@ public class OutputDati {
         }
 
         stringBuilderOutput.append("Il costo totale per il datore di lavoro è di € " + modelloGRB.get(GRB.DoubleAttr.ObjVal));
+        stringBuilderOutput.append("Il modello ha " + modelloGRB.get(GRB.IntAttr.NumVars) + " variabili");
+        stringBuilderOutput.append("Il modello ha " + modelloGRB.get(GRB.IntAttr.NumConstrs) + " vincoli");
 
         return stringBuilderOutput.toString();
     }

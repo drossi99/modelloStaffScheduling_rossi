@@ -76,7 +76,7 @@ public class Modello {
 
     public void impostaVettoriXY(GRBVar[] vars, int numGiorni, int numDipendenti, int numIntervalli) {
         int numeroVariabiliX = numGiorni * numDipendenti * numIntervalli;
-        System.out.println("Il modello ha " + vars.length + " variabili");
+        //System.out.println("Il modello ha " + vars.length + " variabili");
         int i = 0;
         for (int g = 0; g < numGiorni; g++) {
             for (int d = 0; d< numDipendenti; d++) {
