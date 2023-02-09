@@ -33,7 +33,6 @@ public class Sessione {
         default:
             IstanzaProblema istanzaSelezionata = this.getListaIstanze().get(scelta-1);
             Risolutore risolutore = new Risolutore();
-            OutputDati.stampaMessaggio("Si sta preparando il modello: potrebbe volerci un po' di tempo...");
             Modello modelloConVincoli = risolutore.aggiungiVincoli(istanzaSelezionata);
             GRBModel modelloGRB = modelloConVincoli.getModelloGRB();
             risolutore.ottimizzaModello(modelloConVincoli, istanzaSelezionata);

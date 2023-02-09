@@ -358,6 +358,9 @@ public class Risolutore {
     public void ottimizzaModello(Modello modelloConVincoli, IstanzaProblema istanza) throws GRBException {
         GRBModel modelloGRB = modelloConVincoli.getModelloGRB();
 
+        OutputDati.stampaMessaggio("Si sta preparando il modello: potrebbe volerci un po' di tempo...");
+
+        modelloGRB.presolve();
         modelloGRB.optimize();
         modelloConVincoli.impostaVettoriXY(modelloGRB.getVars(), istanza.getNumeroGiorniSettimana(), istanza.getNumeroDipendenti(), istanza.getFrazionamentoGiornata().getNumeroIntervalli());
 

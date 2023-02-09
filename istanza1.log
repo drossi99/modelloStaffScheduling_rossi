@@ -276,3 +276,92 @@ Solution count 1: 8200
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 8.200000000000e+03, best bound 8.200000000000e+03, gap 0.0000%
+
+Gurobi 9.5.1 (linux64, Java) logging started gio 9 feb 2023, 01:36:58
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-12-01
+
+Gurobi 9.5.1 (linux64, Java) logging started gio 9 feb 2023, 01:39:26
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-12-01
+
+Gurobi 9.5.1 (linux64, Java) logging started gio 9 feb 2023, 01:40:15
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-12-01
+
+Gurobi 9.5.1 (linux64, Java) logging started gio 9 feb 2023, 01:47:02
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-12-01
+Warning: parameter changes on this environment will not affect existing models.
+Set parameter Presolve to value 0
+Presolve removed 10480 rows and 560 columns
+Presolve time: 0.49s
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 18147 rows, 1750 columns and 66120 nonzeros
+Model fingerprint: 0xea5ac313
+Variable types: 0 continuous, 1750 integer (1750 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 10480 rows and 560 columns
+Presolve time: 0.36s
+Presolved: 7667 rows, 1190 columns, 28630 nonzeros
+Variable types: 0 continuous, 1190 integer (1190 binary)
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root relaxation: objective 8.200000e+03, 713 iterations, 0.07 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                    8200.0000000    0.00000   100%     -    0s
+     0     0          -    0      8200.00000 8200.00000  0.00%     -    0s
+
+Explored 1 nodes (1400 simplex iterations) in 0.67 seconds (0.29 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 8200 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.200000000000e+03, best bound 8.200000000000e+03, gap 0.0000%
+
+Gurobi 9.5.1 (linux64, Java) logging started gio 9 feb 2023, 01:49:43
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-12-01
+Set parameter Presolve to value 0
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 18147 rows, 1750 columns and 66120 nonzeros
+Model fingerprint: 0xea5ac313
+Variable types: 0 continuous, 1750 integer (1750 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Variable types: 0 continuous, 1750 integer (1750 binary)
+
+Root relaxation: objective 8.200000e+03, 1245 iterations, 0.22 seconds (0.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                    8200.0000000    0.00000   100%     -    0s
+     0     0          -    0      8200.00000 8200.00000  0.00%     -    0s
+
+Explored 1 nodes (1843 simplex iterations) in 0.50 seconds (0.18 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 8200 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.200000000000e+03, best bound 8.200000000000e+03, gap 0.0000%

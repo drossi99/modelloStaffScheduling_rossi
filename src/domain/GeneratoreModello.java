@@ -1,12 +1,22 @@
 package domain;
 
 import gurobi.*;
+import utility.InputDati;
 
 public class GeneratoreModello {
     static IstanzaProblema istanza;
 
     public static Modello generaModelloDaIstanza(IstanzaProblema istanza) throws GRBException {
         GRBEnv env = new GRBEnv(istanza.getNome() + ".log");
+
+        int presolve = InputDati.leggiIntero("Inserisci il valore di presolve desiderato:" +
+                "\n\t -1: default - impostazione automatica" +
+                "\n\t 0: disattivato" +
+                "\n\t 1: conservativo" +
+                "\n\t 2: aggressivo\n", -1, 2);
+
+        env.set(GRB.IntParam.Presolve, presolve);
+
         GRBModel modelGRB = new GRBModel(env);
         GRBVar[][][] vettoreX = dichiaraVariabiliX(modelGRB, istanza);
         GRBVar[][] vettoreY = dichiaraVariabiliY(modelGRB, istanza);
