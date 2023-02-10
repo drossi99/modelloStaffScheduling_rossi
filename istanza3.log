@@ -42,3 +42,13 @@ Gurobi 9.5.1 (linux64, Java) logging started ven 10 feb 2023, 17:09:34
 
 Set parameter Username
 Academic license - for non-commercial use only - expires 2023-12-01
+
+Gurobi 9.5.1 (linux64, Java) logging started ven 10 feb 2023, 17:52:49
+
+Set parameter Username
+Set parameter MemLimit to value 3
+Academic license - for non-commercial use only - expires 2023-12-01
+Set parameter Threads to value 1
+Set parameter Presolve to value 0
+Set parameter MIPGap to value 1e-12
+Set parameter TimeLimit to value 300

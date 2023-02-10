@@ -356,16 +356,21 @@ public class Risolutore {
     }
 
     public void ottimizzaModello(Modello modelloConVincoli, IstanzaProblema istanza) throws GRBException {
-        GRBModel modelloGRB = modelloConVincoli.getModelloGRB();
+        try {
+            GRBModel modelloGRB = modelloConVincoli.getModelloGRB();
 
-        OutputDati.stampaMessaggio("Si sta preparando il modello: potrebbe volerci un po' di tempo...");
+            OutputDati.stampaMessaggio("Si sta preparando il modello: potrebbe volerci un po' di tempo...");
 
-        modelloGRB.presolve();
-        modelloGRB.optimize();
-        modelloConVincoli.impostaVettoriXY(modelloGRB.getVars(), istanza.getNumeroGiorniSettimana(), istanza.getNumeroDipendenti(), istanza.getFrazionamentoGiornata().getNumeroIntervalli());
+            modelloGRB.presolve();
+            modelloGRB.optimize();
+            modelloConVincoli.impostaVettoriXY(modelloGRB.getVars(), istanza.getNumeroGiorniSettimana(), istanza.getNumeroDipendenti(), istanza.getFrazionamentoGiornata().getNumeroIntervalli());
 
-        OutputDati.presentaRisultati(modelloConVincoli, istanza, modelloGRB);
-        modelloGRB.write(istanza.getNome() + ".lp");
+            OutputDati.presentaRisultati(modelloConVincoli, istanza, modelloGRB);
+            modelloGRB.write(istanza.getNome() + ".lp");
+        } catch (Exception e) {
+            OutputDati.stampaErrore("Il risolutore ha incontrato il seguente problema: " + e.getMessage());
+        }
+
     }
 
     public static GRBModel aggiungiVincoloQuantitaminimapersonale(GRBModel modelloGRB, IstanzaProblema istanza, Modello modelloDaIstanza) throws GRBException {

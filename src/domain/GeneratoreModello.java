@@ -20,7 +20,7 @@ public class GeneratoreModello {
 
         GRBModel modelGRB = new GRBModel(env);
 
-        modelGRB.set(GRB.DoubleParam.MIPGap, 1e-12);
+        modelGRB.set(GRB.DoubleParam.MIPGap, 1e-10);
         modelGRB.set(GRB.DoubleParam.TimeLimit, 300);
         OutputDati.stampaMessaggio("Verranno usati al massimo " + env.get(GRB.DoubleParam.MemLimit) + " GB di memoria");
         GRBVar[][][] vettoreX = dichiaraVariabiliX(modelGRB, istanza);
