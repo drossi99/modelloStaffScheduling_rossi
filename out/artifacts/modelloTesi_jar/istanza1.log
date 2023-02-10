@@ -876,3 +876,67 @@ Solution count 1: 8300
 Optimal solution found (tolerance 1.00e-04)
 Best objective 8.300000000000e+03, best bound 8.300000000000e+03, gap 0.0000%
 Warning: linear constraint 18147 and linear constraint 18148 have the same name "vincoloPersonaleMinimo_giorno5_cat0_fasciaDa13a18"
+
+Gurobi 9.5.2 (linux64, Java) logging started ven 10 feb 2023, 01:02:09
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-12-01
+Warning: Gurobi version mismatch between Java 9.5.1 and C library 9.5.2
+Warning: Gurobi version mismatch between Java 9.5.1 and Jni 9.5.2
+Set parameter Presolve to value 0
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 71717 rows, 3430 columns and 252610 nonzeros
+Model fingerprint: 0x50c7ec42
+Variable types: 0 continuous, 3430 integer (3430 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+Variable types: 0 continuous, 3430 integer (3430 binary)
+
+Root relaxation: objective 8.200000e+03, 3663 iterations, 2.28 seconds (1.49 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                    8200.0000000    0.00000   100%     -    4s
+     0     0          -    0      8200.00000 8200.00000  0.00%     -    4s
+
+Explored 1 nodes (6516 simplex iterations) in 4.80 seconds (2.60 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 8200 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.200000000000e+03, best bound 8.200000000000e+03, gap 0.0000%
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 71717 rows, 3430 columns and 252610 nonzeros
+Model fingerprint: 0x50c7ec42
+Variable types: 0 continuous, 3430 integer (3430 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded MIP start from previous solve with objective 8200
+
+Variable types: 0 continuous, 3430 integer (3430 binary)
+
+Root relaxation: cutoff, 9 iterations, 0.05 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      8200.00000 8200.00000  0.00%     -    0s
+
+Explored 1 nodes (9 simplex iterations) in 0.24 seconds (0.05 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 8200 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.200000000000e+03, best bound 8.200000000000e+03, gap 0.0000%

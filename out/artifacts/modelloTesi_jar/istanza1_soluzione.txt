@@ -1,84 +1,84 @@
 **********
 Il dipendente 0 avrà questi orari:
-	non lavora nei giorni: 4, 5
-	il giorno 0: dalle 5:00 alle 13:00
-	il giorno 1: dalle 15:00 alle 21:00
-	il giorno 2: dalle 11:00 alle 20:00
-	il giorno 3: dalle 12:00 alle 21:00
-	il giorno 6: dalle 11:00 alle 20:00
+	non lavora nei giorni: 2, 6
+	il giorno 0: dalle 7:00 alle 19:30
+	il giorno 1: dalle 12:00 alle 17:00
+	il giorno 3: dalle 7:30 alle 20:00
+	il giorno 4: dalle 10:00 alle 16:00
+	il giorno 5: dalle 12:00 alle 18:30
 **********
 Il dipendente 1 avrà questi orari:
-	non lavora nei giorni: 1, 2
-	il giorno 0: dalle 17:00 alle 21:00
-	il giorno 3: dalle 6:00 alle 16:00
-	il giorno 4: dalle 9:00 alle 21:00
-	il giorno 5: dalle 13:00 alle 18:00
-	il giorno 6: dalle 12:00 alle 21:00
+	non lavora nei giorni: 5, 6
+	il giorno 0: dalle 5:00 alle 13:30
+	il giorno 1: dalle 5:00 alle 12:30
+	il giorno 2: dalle 6:30 alle 13:00
+	il giorno 3: dalle 5:00 alle 13:30
+	il giorno 4: dalle 5:00 alle 16:30
 **********
 Il dipendente 2 avrà questi orari:
 	non lavora nei giorni: 4, 5
-	il giorno 0: dalle 5:00 alle 17:00
-	il giorno 1: dalle 11:00 alle 18:00
-	il giorno 2: dalle 10:00 alle 21:00
-	il giorno 3: dalle 16:00 alle 21:00
-	il giorno 6: dalle 7:00 alle 12:00
+	il giorno 0: dalle 7:30 alle 13:30
+	il giorno 1: dalle 9:00 alle 21:30
+	il giorno 2: dalle 7:00 alle 11:30
+	il giorno 3: dalle 5:00 alle 16:30
+	il giorno 6: dalle 5:30 alle 13:30
 **********
 Il dipendente 3 avrà questi orari:
-	non lavora nei giorni: 1, 6
-	il giorno 0: dalle 8:00 alle 19:00
-	il giorno 2: dalle 14:00 alle 19:00
-	il giorno 3: dalle 11:00 alle 20:00
-	il giorno 4: dalle 10:00 alle 20:00
-	il giorno 5: dalle 13:00 alle 18:00
+	non lavora nei giorni: 1, 5
+	il giorno 0: dalle 11:30 alle 21:00
+	il giorno 2: dalle 6:30 alle 16:30
+	il giorno 3: dalle 8:30 alle 21:00
+	il giorno 4: dalle 8:30 alle 14:00
+	il giorno 6: dalle 12:30 alle 20:00
 **********
 Il dipendente 4 avrà questi orari:
-	non lavora nei giorni: 2, 5
-	il giorno 0: dalle 6:00 alle 18:00
-	il giorno 1: dalle 13:00 alle 20:00
-	il giorno 3: dalle 9:00 alle 21:00
-	il giorno 4: dalle 14:00 alle 21:00
-	il giorno 6: dalle 13:00 alle 19:00
+	non lavora nei giorni: 1, 5
+	il giorno 0: dalle 7:00 alle 19:30
+	il giorno 2: dalle 13:30 alle 19:30
+	il giorno 3: dalle 5:30 alle 13:30
+	il giorno 4: dalle 6:30 alle 18:00
+	il giorno 6: dalle 13:00 alle 21:30
 **********
 Il dipendente 5 avrà questi orari:
-	non lavora nei giorni: 5, 6
-	il giorno 0: dalle 5:00 alle 10:00
-	il giorno 1: dalle 14:00 alle 21:00
-	il giorno 2: dalle 13:00 alle 21:00
-	il giorno 3: dalle 8:00 alle 20:00
-	il giorno 4: dalle 10:00 alle 19:00
+	non lavora nei giorni: 1, 5
+	il giorno 0: dalle 5:30 alle 16:30
+	il giorno 2: dalle 15:30 alle 21:30
+	il giorno 3: dalle 8:00 alle 19:30
+	il giorno 4: dalle 6:00 alle 15:00
+	il giorno 6: dalle 12:00 alle 17:00
 **********
 Il dipendente 6 avrà questi orari:
-	non lavora nei giorni: 4, 6
-	il giorno 0: dalle 7:00 alle 19:00
-	il giorno 1: dalle 10:00 alle 18:00
-	il giorno 2: dalle 14:00 alle 19:00
-	il giorno 3: dalle 9:00 alle 21:00
-	il giorno 5: dalle 13:00 alle 18:00
+	non lavora nei giorni: 5, 6
+	il giorno 0: dalle 6:00 alle 18:30
+	il giorno 1: dalle 7:30 alle 19:30
+	il giorno 2: dalle 7:30 alle 12:00
+	il giorno 3: dalle 6:00 alle 13:30
+	il giorno 4: dalle 9:30 alle 15:30
 **********
 Il dipendente 7 avrà questi orari:
-	non lavora nei giorni: 1, 2
-	il giorno 0: dalle 7:00 alle 19:00
-	il giorno 3: dalle 7:00 alle 18:00
-	il giorno 4: dalle 10:00 alle 20:00
-	il giorno 5: dalle 13:00 alle 18:00
-	il giorno 6: dalle 15:00 alle 20:00
+	non lavora nei giorni: 2, 6
+	il giorno 0: dalle 8:00 alle 20:30
+	il giorno 1: dalle 9:30 alle 14:30
+	il giorno 3: dalle 5:00 alle 17:00
+	il giorno 4: dalle 11:30 alle 21:00
+	il giorno 5: dalle 6:30 alle 13:00
 **********
 Il dipendente 8 avrà questi orari:
-	non lavora nei giorni: 3, 6
-	il giorno 0: dalle 5:00 alle 17:00
-	il giorno 1: dalle 11:00 alle 20:00
-	il giorno 2: dalle 13:00 alle 18:00
-	il giorno 4: dalle 11:00 alle 21:00
-	il giorno 5: dalle 13:00 alle 18:00
+	non lavora nei giorni: 3, 5
+	il giorno 0: dalle 5:00 alle 12:30
+	il giorno 1: dalle 8:00 alle 19:00
+	il giorno 2: dalle 6:00 alle 17:00
+	il giorno 4: dalle 5:00 alle 11:00
+	il giorno 6: dalle 5:30 alle 13:00
 **********
 Il dipendente 9 avrà questi orari:
-	non lavora nei giorni: 3, 5
-	il giorno 0: dalle 6:00 alle 18:00
-	il giorno 1: dalle 15:00 alle 21:00
-	il giorno 2: dalle 14:00 alle 21:00
-	il giorno 4: dalle 9:00 alle 21:00
-	il giorno 6: dalle 13:00 alle 19:00
-Il costo totale per il datore di lavoro è di € 8300.0
-Il modello ha 1750 variabili
-Il modello ha 18321 vincoli
-Il modello ci ha messo 0.5718181133270264 secondi
+	non lavora nei giorni: 1, 3
+	il giorno 0: dalle 5:00 alle 17:30
+	il giorno 2: dalle 8:00 alle 13:30
+	il giorno 4: dalle 11:30 alle 21:00
+	il giorno 5: dalle 12:00 alle 20:30
+	il giorno 6: dalle 11:30 alle 18:00
+Il costo totale per il datore di lavoro è di € 8200.0
+Il modello ha 3430 variabili
+Il modello ha 71717 vincoli
+Il modello ci ha messo 0.23824596405029297 secondi
