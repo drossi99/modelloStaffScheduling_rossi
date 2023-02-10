@@ -515,3 +515,26 @@ Solution count 1: 8200
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 8.200000000000e+03, best bound 8.200000000000e+03, gap 0.0000%
+
+Gurobi 9.5.1 (linux64, Java) logging started ven 10 feb 2023, 17:34:31
+
+Set parameter Username
+Set parameter MemLimit to value 3
+Academic license - for non-commercial use only - expires 2023-12-01
+Set parameter Threads to value 1
+Set parameter Presolve to value 0
+Set parameter MIPGap to value 1e-12
+Set parameter TimeLimit to value 300
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 1 threads
+Optimize a model with 71717 rows, 3430 columns and 252610 nonzeros
+Model fingerprint: 0x50c7ec42
+Variable types: 0 continuous, 3430 integer (3430 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+Variable types: 0 continuous, 3430 integer (3430 binary)
+
+Root relaxation: objective 8.200000e+03, 3663 iterations, 3.40 seconds (1.49 work units)

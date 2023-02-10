@@ -2,13 +2,14 @@ package domain;
 
 import gurobi.*;
 import utility.InputDati;
+import view.OutputDati;
 
 public class GeneratoreModello {
     static IstanzaProblema istanza;
 
     public static Modello generaModelloDaIstanza(IstanzaProblema istanza) throws GRBException {
         GRBEnv env = new GRBEnv(istanza.getNome() + ".log");
-
+        env.set(GRB.IntParam.Threads, 1);
         int presolve = InputDati.leggiIntero("Inserisci il valore di presolve desiderato:" +
                 "\n\t -1: default - impostazione automatica" +
                 "\n\t 0: disattivato" +
@@ -21,7 +22,7 @@ public class GeneratoreModello {
 
         modelGRB.set(GRB.DoubleParam.MIPGap, 1e-12);
         modelGRB.set(GRB.DoubleParam.TimeLimit, 300);
-        modelGRB.set("SoftMemLimit", "2");
+        OutputDati.stampaMessaggio("Verranno usati al massimo " + env.get(GRB.DoubleParam.MemLimit) + " GB di memoria");
         GRBVar[][][] vettoreX = dichiaraVariabiliX(modelGRB, istanza);
         GRBVar[][] vettoreY = dichiaraVariabiliY(modelGRB, istanza);
         dichiaraFunzioneObiettivo(istanza, modelGRB, vettoreX);
