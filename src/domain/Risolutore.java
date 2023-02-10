@@ -356,9 +356,8 @@ public class Risolutore {
     }
 
     public void ottimizzaModello(Modello modelloConVincoli, IstanzaProblema istanza) throws GRBException {
+        GRBModel modelloGRB = modelloConVincoli.getModelloGRB();
         try {
-            GRBModel modelloGRB = modelloConVincoli.getModelloGRB();
-
             OutputDati.stampaMessaggio("Si sta preparando il modello: potrebbe volerci un po' di tempo...");
 
             modelloGRB.presolve();
@@ -369,8 +368,10 @@ public class Risolutore {
             modelloGRB.write(istanza.getNome() + ".lp");
         } catch (Exception e) {
             OutputDati.stampaErrore("Il risolutore ha incontrato il seguente problema: " + e.getMessage());
+            OutputDati.stampaMessaggio("\nIl modello ha " + modelloGRB.get(GRB.IntAttr.NumVars) + " variabili");
+            OutputDati.stampaMessaggio("\nIl modello ha " + modelloGRB.get(GRB.IntAttr.NumConstrs) + " vincoli");
+            OutputDati.stampaMessaggio("\nIl modello ci ha messo " + modelloGRB.get(GRB.DoubleAttr.Runtime) + " secondi");;
         }
-
     }
 
     public static GRBModel aggiungiVincoloQuantitaminimapersonale(GRBModel modelloGRB, IstanzaProblema istanza, Modello modelloDaIstanza) throws GRBException {
