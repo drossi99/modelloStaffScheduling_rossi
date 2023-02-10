@@ -18,6 +18,9 @@ public class GeneratoreModello {
         env.set(GRB.IntParam.Presolve, presolve);
 
         GRBModel modelGRB = new GRBModel(env);
+
+        modelGRB.set(GRB.DoubleParam.MIPGap, 1e-12);
+        modelGRB.set(GRB.DoubleParam.TimeLimit, 300);
         GRBVar[][][] vettoreX = dichiaraVariabiliX(modelGRB, istanza);
         GRBVar[][] vettoreY = dichiaraVariabiliY(modelGRB, istanza);
         dichiaraFunzioneObiettivo(istanza, modelGRB, vettoreX);
