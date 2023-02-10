@@ -1,0 +1,24 @@
+
+Gurobi 9.5.2 (linux64, Java) logging started ven 10 feb 2023, 16:43:38
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-12-01
+Warning: Gurobi version mismatch between Java 9.5.1 and C library 9.5.2
+Warning: Gurobi version mismatch between Java 9.5.1 and Jni 9.5.2
+Set parameter Presolve to value 0
+Set parameter MIPGap to value 1e-12
+Set parameter TimeLimit to value 300
+Presolve removed 0 rows and 0 columns (presolve time = 6s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 12s) ...
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 7152507 rows, 169750 columns and 25333000 nonzeros
+Model fingerprint: 0xc1fd9d72
+Variable types: 0 continuous, 169750 integer (169750 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+01]
+  Objective range  [7e+00, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+03]
+Presolve removed 0 rows and 0 columns (presolve time = 6s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 12s) ...

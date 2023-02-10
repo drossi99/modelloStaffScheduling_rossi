@@ -21,6 +21,7 @@ public class GeneratoreModello {
 
         modelGRB.set(GRB.DoubleParam.MIPGap, 1e-12);
         modelGRB.set(GRB.DoubleParam.TimeLimit, 300);
+        modelGRB.set("SoftMemLimit", "2");
         GRBVar[][][] vettoreX = dichiaraVariabiliX(modelGRB, istanza);
         GRBVar[][] vettoreY = dichiaraVariabiliY(modelGRB, istanza);
         dichiaraFunzioneObiettivo(istanza, modelGRB, vettoreX);
