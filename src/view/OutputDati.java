@@ -143,9 +143,9 @@ public class OutputDati {
             int oraInizio = (listaIntervalliInizio.get(j) % numeroIntervalli) / fattoreMoltiplicativo;
             int minutiInizio = ((listaIntervalliInizio.get(j) % numeroIntervalli) % fattoreMoltiplicativo) * 60 / fattoreMoltiplicativo ;
             int oraFine = ((listaIntervalliFine.get(j) % numeroIntervalli )/ fattoreMoltiplicativo) + 1;//+1 serve perché l'intervallo 5 inizia sì alle 5, ma termina alle 6
-            int differenza = (fattoreMoltiplicativo == 2 ? -1 : fattoreMoltiplicativo == 4 ? -2 : 0);
+            int differenza = (fattoreMoltiplicativo == 2 ? -1 : fattoreMoltiplicativo == 4 ? -3 : 0);
             int minutiFine = (((listaIntervalliFine.get(j) % numeroIntervalli) + differenza )% fattoreMoltiplicativo) * 60 / fattoreMoltiplicativo;
-            if (fattoreMoltiplicativo == 2 && minutiFine == 30) {
+            if ((fattoreMoltiplicativo == 2 && minutiFine == 30) || (fattoreMoltiplicativo == 4 && minutiFine == 45)) {
                 oraFine = oraFine - 1;
             }
             strDipendente.append("\n\til giorno " + (listaGiorniInizio.get(j)) + ": dalle ");
