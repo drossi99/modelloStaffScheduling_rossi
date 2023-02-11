@@ -1,7 +1,7 @@
 
 # Un modello flessibile per l'ottimizzazione della schedulazione del personale
 
-Il codice è di supporto alla relazione finale.
+Il codice è di supporto alla relazione finale
 
 Per utilizzare il programma è necessario disporre di una licenza Gurobi
 
